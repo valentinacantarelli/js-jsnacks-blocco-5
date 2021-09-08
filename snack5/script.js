@@ -5,15 +5,15 @@
 // compresa tra “a” e “b”
 
 var arr=["lunedi","martedi","mercoledi","giovedi","venerdi","sabato","domenica"];
-var min=2;
-var max=5;
+var min=parseInt(prompt("inserisci un numero tra 1 e 3"));
+var max=parseInt(prompt("Inserisci un numero tra 4 e 7"));
 var nuovoArray=[];
 
 function seleziona(arr,num1,num2){
     var sezioneArrey=[];
     
     for(var i=0;i<arr.length;i++){
-        if(i>min && i<max){
+        if(i>=num1 && i<=num2){
             sezioneArrey.push(arr[i]);
         }
     }
