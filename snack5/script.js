@@ -10,10 +10,12 @@ var nuovoArray=[];
 function seleziona(arr,num1,num2){
     var sezioneArrey=[];
     var i=0;
-    while(arr.length[i]>num1 && arr.length[i]<num2){
-        sezioneArrey.push(arr);
+    while(arr[i]>num1 && arr[i]<num2){
+        sezioneArrey.push(arr[i]);
     }
     return sezioneArrey;
-}
+};
 
-console.log(seleziona(arr,2,5));
+nuovoArray.push(seleziona(arr,2,5));
+
+console.log(nuovoArray);
