@@ -5,17 +5,21 @@
 // compresa tra “a” e “b”
 
 var arr=["lunedi","martedi","mercoledi","giovedi","venerdi","sabato","domenica"];
+var min=2;
+var max=5;
 var nuovoArray=[];
 
 function seleziona(arr,num1,num2){
     var sezioneArrey=[];
-    var i=0;
-    while(arr[i]>num1 && arr[i]<num2){
-        sezioneArrey.push(arr[i]);
+    
+    for(var i=0;i<arr.length;i++){
+        if(i>min && i<max){
+            sezioneArrey.push(arr[i]);
+        }
     }
     return sezioneArrey;
 };
 
-nuovoArray.push(seleziona(arr,2,5));
+nuovoArray.push(seleziona(arr,min,max));
 
 console.log(nuovoArray);
