@@ -77,5 +77,5 @@ for(var i=0;i<zucchineLunghe.length;i++){
 for(var i=0;i<zucchineCorte.length;i++){
     pesoZucchineCorte+=zucchineCorte[i].pesoGr;
 }
-console.log(`il peso totale è${pesoZucchineLunghe}`);
-console.log(`il peso totale è${pesoZucchineCorte}`);
+console.log(`il peso totale delle zucchine lunghe è ${pesoZucchineLunghe}`);
+console.log(`il peso totale delle zucchine corte è ${pesoZucchineCorte}`);
